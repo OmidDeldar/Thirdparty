@@ -6,7 +6,6 @@ import { LiteCoinService } from "../../modules/litecoin/service/lite.coin.servic
 
 
 
-@ApiBearerAuth('access-token')
 @ApiTags('Third-Party-Lite')
 @ApiHeader({
   name: 'language-code',

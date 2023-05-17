@@ -6,7 +6,6 @@ import { BitCoinService } from "../../modules/bitcoin/service/bit.coin.service";
 
 
 
-@ApiBearerAuth('access-token')
 @ApiTags('Third-Party-bitcoin')
 @ApiHeader({
   name: 'language-code',

@@ -49,8 +49,6 @@ import { ApproveTrc20Dto } from "../../common/dtos/approve.trc20.dto";
 )
 
 @Controller('third-party/tron')
-@UseInterceptors(ClassSerializerInterceptor)
-@UseGuards(AuthGuard())
 export class TronThirdPartyController {
   constructor(private tronService : TronService) {
   }

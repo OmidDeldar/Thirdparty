@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { AbstractThirdPartyClass } from "../../../common/class/abstract.third.party.class";
 
-// import TronWeb from "tronweb";
-const TronWeb=require("tronweb")
+import * as TronWeb from "tronweb";
+// const TronWeb=require("tronweb")
 import { TransferCoinDto } from "../../../common/dtos/transfer.coin.dto";
 import { TransferTokenDto } from "../../../common/dtos/transfer.token.dto";
 import { GenerateAddressResult } from "../../../common/result/generate.address.result";
@@ -28,7 +28,7 @@ const bigDecimal = require("js-big-decimal");
 export class TronService extends AbstractThirdPartyClass  implements  AbstractThirdPartyTrc20Class{
 
 
-  private tronWeb;
+  private tronWeb: TronWeb;
   private NET = "https://api.trongrid.io";
   private API_KEYS : { name : string , apikey : string }[] = [
     { name :"account1" , apikey : "84037e99-68b0-42e7-8093-5f4f145449ad"  } ,

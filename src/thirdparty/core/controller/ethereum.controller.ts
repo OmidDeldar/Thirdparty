@@ -6,7 +6,6 @@ import { EthereumService } from "../../modules/eth/service/ethereum.service";
 
 
 
-@ApiBearerAuth('access-token')
 @ApiTags('Etheruem-Third-Party')
 @ApiHeader({
   name: 'accept-language',

@@ -6,7 +6,6 @@ import { DogeCoinService } from "../../modules/dogecoin/service/doge.coin.servic
 
 
 
-@ApiBearerAuth('access-token')
 @ApiTags('Third-Party-Doge')
 @ApiHeader({
   name: 'language-code',
