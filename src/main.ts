@@ -21,7 +21,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('doc', app, document);
-  const port = 8822;
+  const port = process.env.APP_PORT;
   await app.listen(port).then(async () => {
     nestLogger.log(`http://127.0.0.1:${port}/doc`, 'Running Swagger');
   });
